@@ -7,7 +7,7 @@ function App() {
   /* inputVal 이라는 바인딩 변수랑 set 함수 만들어 주세요.
   타입은 string */
   const [inputVal, setinputVal] = useState<string>("");
-  const [result, setResult] = useState<string>("");
+  const [evalResult, setevalResult] = useState<string>("");
   
 
   let dummy = "hello";
@@ -35,14 +35,14 @@ function App() {
             
               /* eval() 을 사용해서 계산기를 만들어 주세요*/
               let data = eval(inputVal);
-              setResult(String(data));
+              setevalResult(String(data)); // 결과를 화면에 표시
               
             }
           }}
         />
         <div>{dummy}</div>
         <div>내가 타이핑 한거: {inputVal}</div>
-        <div>계산 결과: {result}</div>
+        <div>계산 결과: {evalResult}</div>
       </div>
     </div>
   );
