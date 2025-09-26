@@ -7,6 +7,9 @@ function App() {
   /* inputVal 이라는 바인딩 변수랑 set 함수 만들어 주세요.
   타입은 string */
   const [inputVal, setinputVal] = useState<string>("");
+  const [result, setResult] = useState<string>("");
+  
+
   let dummy = "hello";
   useEffect(() => {
     dummy = "bye";
@@ -28,15 +31,18 @@ function App() {
           onKeyDown={(event) => {
             let key = event?.key;
             if (key == "Enter") {
+
             
               /* eval() 을 사용해서 계산기를 만들어 주세요*/
               let data = eval(inputVal);
+              setResult(String(data));
               
             }
           }}
         />
         <div>{dummy}</div>
         <div>내가 타이핑 한거: {inputVal}</div>
+        <div>계산 결과: {result}</div>
       </div>
     </div>
   );
