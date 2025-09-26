@@ -29,6 +29,8 @@ function App() {
             let key = event?.key;
             if (key == "Enter") {
               alert("앤터 누름");
+              eval("41234134");
+              /* eval() 을 사용해서 계산기를 만들어 주세요*/
             }
           }}
         />
