@@ -10,6 +10,9 @@ function App() {
   let dummy = "hello";
   useEffect(() => {
     dummy = "bye";
+
+    let data=eval("1+2");
+    console.log('data : ${data}');
   }, []);
 
   return (
