@@ -35,7 +35,7 @@ function App() {
             
               /* eval() 을 사용해서 계산기를 만들어 주세요*/
               let data = eval(inputVal);
-              setResult(inputVal);
+              setResult(String(data));
               
             }
           }}
