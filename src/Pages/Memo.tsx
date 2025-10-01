@@ -11,6 +11,11 @@ export default function Memo() {
           placeholder="메모를 입력하세요"
           cols={100}
           rows={20}
+          value={memo}
+          onChange={(event) => {
+            setmemo(event?.target?.value ?? "");
+          }}
+          onKeyDown={(event) => {}}
         />
       </div>
     </div>
