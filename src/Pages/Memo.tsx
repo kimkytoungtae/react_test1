@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Memo() {
+  const [memo, setmemo] = useState<string>("");
   return (
     <div className="content-margin-padding">
       <div>memo 화면</div>
