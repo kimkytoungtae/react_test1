@@ -23,7 +23,14 @@ export default function Memo() {
             />
           </div>
           <div>
-            <button onClick={() => {}}>저장</button>
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+              }}
+            >
+              저장
+            </button>
+            ..
           </div>
         </form>
       </div>
