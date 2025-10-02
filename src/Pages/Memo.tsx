@@ -63,9 +63,14 @@ export default function Memo() {
 
       <div>
         {memoList.map((e) => (
-          <div>
-            <span className="pre-wrap-text">{e.content}</span> &nbsp;&nbsp;
-            <span>{e.date}</span>
+          <div className="memo-item-container">
+            <div className="memo-content">{e.content}</div>
+            <div className="memo-info-actions">
+              <div className="memo-date">{e.date}</div>
+              {/* 나중에 추가할 버튼 위치 */}
+              <button className="memo-button">수정</button>
+              <button className="memo-button">삭제</button>
+            </div>
           </div>
         ))}
       </div>
