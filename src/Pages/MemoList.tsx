@@ -45,12 +45,19 @@ export default function MemoList() {
 
       <div>
         {memo.map((e) => (
-          <div className="memo-item-container">
+          <div className="memo-item-container" key={e?.id}>
             <div className="memo-content">{e.title}</div>
             <div className="memo-info-actions">
               <div className="memo-date">{e.createdDt}</div>
               {/* 나중에 추가할 버튼 위치 */}
-              <button className="memo-button">수정</button>
+              <button
+                className="memo-button"
+                onClick={() => {
+                  onMemoUpsert(e?.id ?? 0);
+                }}
+              >
+                수정
+              </button>
               <button className="memo-button">삭제</button>
             </div>
           </div>
