@@ -62,7 +62,14 @@ export default function MemoDetail() {
       <div>상세내용</div>
 
       <div></div>
-      <button> 리스트로 이동</button>
+      <button
+        className="memo-button"
+        onClick={() => {
+          onMemoDetail(e?.id ?? 0);
+        }}
+      >
+        수정
+      </button>
     </div>
   );
 }

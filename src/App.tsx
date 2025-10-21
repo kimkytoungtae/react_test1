@@ -22,7 +22,7 @@ function App() {
           <Route path="/lotto" element={<Lotto />} />
           <Route path="/memo" element={<MemoList />} />
           <Route path="/memo_upsert" element={<MemoUpsert />} />
-          <Route path="/memo" element={<MemoDetail />} />
+          <Route path="/memo_detail" element={<MemoDetail />} />
         </Routes>
         <Footer />
       </BrowserRouter>
