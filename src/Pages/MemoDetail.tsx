@@ -63,7 +63,14 @@ export default function MemoDetail() {
 
       <div>제목: {memo?.title}</div>
       <div>내용: {memo?.content}</div>
-      <button> 리스트로 이동</button>
+      <button
+        onClick={() => {
+          navigate(`/memo}`);
+        }}
+      >
+        {" "}
+        리스트로 이동
+      </button>
     </div>
   );
 }
